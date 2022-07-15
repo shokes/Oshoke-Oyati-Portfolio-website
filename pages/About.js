@@ -136,8 +136,8 @@ const About = function () {
                   Frontend Developer
                 </div>
                 <p className='text-text-color text-lg'>
-                  I help bring various clients' visions into reality through
-                  seamless processes and on time delivery.
+                  I help bring various clients&apos; visions into reality
+                  through seamless processes and on time delivery.
                 </p>
               </div>
             </div>
