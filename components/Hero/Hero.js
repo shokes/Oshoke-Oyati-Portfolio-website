@@ -33,7 +33,7 @@ const Hero = function () {
           {theme === 'dark-theme' ? (
             <div className=''>
               <p className='text-lg text-text-color'>
-                Hello, I'm <b>Oshoke Oyati</b>
+                Hello, I&apos;m <b>Oshoke Oyati</b>
               </p>
 
               <h1 className=' text-text-link text-7xl capitalize font-semibold '>
@@ -44,7 +44,7 @@ const Hero = function () {
               </h1>
 
               <p className='text-xl  text-text-color mb-3'>
-                I'm a Frontend Developer currently based in Nigeria with
+                I&apos;m a Frontend Developer currently based in Nigeria with
                 professional experience in building and delivering end to end
                 solutions for digital products. 🚀
               </p>
@@ -91,7 +91,7 @@ const Hero = function () {
           ) : (
             <div className=''>
               <p className='text-lg text-text-color'>
-                Hi, I'm <b>Oshoke</b>
+                Hi, I&apos;m <b>Oshoke</b>
               </p>
 
               <p className=' text-text-link font-semibold text-7xl capitalize'>
@@ -159,7 +159,14 @@ const Hero = function () {
                 className=' rounded-full'
               />
             ) : (
-              <img src={oshokelight} alt='cartoon' />
+              // <img src={oshokelight} alt='cartoon' />
+              <Image
+                src={cartoon}
+                alt='oshoke cartoon'
+                width={700}
+                height={700}
+                className=' rounded-full'
+              />
             )}
           </div>
         </Slide>

@@ -22,9 +22,10 @@ const About = function () {
             </h3>
             <Slide triggerOnce direction='up' delay={200}>
               <p className='mb-6 mt-3 text-text-color text-xl tracking-wide para '>
-                Hi, I’m Oshoke Oyati, a meticulous Frontend Developer currently
-                based in Nigeria and I enjoy what I do. I am passionate about
-                solving complex problems with responsive website design.
+                Hi, I&apos;m Oshoke Oyati, a meticulous Frontend Developer
+                currently based in Nigeria and I enjoy what I do. I am
+                passionate about solving complex problems with responsive
+                website design.
               </p>
 
               <p className='mb-6 text-text-color text-xl tracking-wide para'>
@@ -33,9 +34,10 @@ const About = function () {
               </p>
 
               <p className='mb-6 text-text-color text-xl tracking-wide para'>
-                I'm thrilled by logic; and I solve problems for fun. When I'm
-                not working I'm either watching football games, catching up on
-                my latest shows, listening to music or surfing the internet.
+                I&apos;m thrilled by logic; and I solve problems for fun. When
+                I&apos;m not working I&apos;m either watching football games,
+                catching up on my latest shows, listening to music or surfing
+                the internet.
               </p>
 
               <a
