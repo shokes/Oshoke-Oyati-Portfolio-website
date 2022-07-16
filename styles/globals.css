@@ -16,6 +16,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+:root {
+  --text-link: #ffa7c4;
+  --text-color: #e9ecef;
+  --background: #282c35;
+  --border: #495057;
+}
+
 .dark-theme {
   --text-link: #ffa7c4;
   --text-color: #e9ecef;

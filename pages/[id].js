@@ -5,14 +5,24 @@ import { Zoom, Slide } from 'react-awesome-reveal';
 import { BsToggleOff, BsToggleOn } from 'react-icons/bs';
 import { useRouter } from 'next/router';
 import { useGlobalContext } from '../context';
+import { useEffect, useState } from 'react';
 
 const WorkDetails = () => {
   const { theme, themeHandler } = useGlobalContext();
+  const [idNumber, setIdNumber] = useState(2);
 
   // looking for the dynamic id
   const router = useRouter();
-  const { id } = router.query;
-  const work = projects.find((project) => +id === project.id);
+
+  useEffect(() => {
+    if (!router.isReady) return;
+    // codes using router.query
+    const { id } = router.query;
+
+    setIdNumber(id);
+  }, [router.isReady]);
+
+  const work = projects.find((project) => +idNumber === project.id);
 
   const {
     title,
@@ -127,7 +137,7 @@ const WorkDetails = () => {
         <p className='text-text-color text-xl'>
           <span className='mr-1'> I also built </span>
           {projects
-            .filter((item) => +id !== item.id)
+            .filter((item) => +idNumber !== item.id)
             .map((item) => {
               return (
                 <Link href={`/${item.id}`} key={item.id}>
