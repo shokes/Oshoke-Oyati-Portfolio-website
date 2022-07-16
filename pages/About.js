@@ -14,7 +14,7 @@ const About = function () {
         <div className='grid grid-cols-1  lg:flex space-x-0 lg:space-x-20 '>
           <Zoom triggerOnce>
             {/* <img className='w-50 h-50 rounded-lg' src={Shokes} alt='Shokes' /> */}
-            <Image src={Shokes} alt='Shokes' width={900} height={1000} />
+            <Image src={Shokes} alt='Shokes' width={1000} height={1100} />
           </Zoom>
           <div>
             <h3 className='text-lg text-text-color font-bold mt-10 lg:mt-0'>

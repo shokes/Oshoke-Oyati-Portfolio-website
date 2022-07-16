@@ -2,29 +2,27 @@ import cartoon from '../../public/oshoke-cartoon.png';
 import oshokelight from '../../public/oshoke-light.png';
 import { Slide, Fade } from 'react-awesome-reveal';
 import Image from 'next/image';
-// import { useGlobalContext } from '../context';
+import { useGlobalContext } from '../../context';
 import { FiGithub, FiTwitter, FiLinkedin, FiMail } from 'react-icons/fi';
 import { useState } from 'react';
 
 const Hero = function () {
-  // const { theme } = useGlobalContext();
-  // const [nigerianTime, setNigerianTime] = useState('');
+  const { theme } = useGlobalContext();
+  const [nigerianTime, setNigerianTime] = useState('');
 
-  // const checkTime = () => {
-  //   const now = new Date();
-  //   const options = {
-  //     hour: 'numeric',
-  //     minute: 'numeric',
-  //   };
+  const checkTime = () => {
+    const now = new Date();
+    const options = {
+      hour: 'numeric',
+      minute: 'numeric',
+    };
 
-  //   setNigerianTime(Intl.DateTimeFormat('en-NG', options).format(now));
-  // };
+    setNigerianTime(Intl.DateTimeFormat('en-NG', options).format(now));
+  };
 
-  // setInterval(() => {
-  //   checkTime();
-  // }, 500);
-
-  const theme = 'dark-theme';
+  setInterval(() => {
+    checkTime();
+  }, 500);
 
   return (
     <section>
@@ -84,9 +82,9 @@ const Hero = function () {
                 </a>
               </div>
 
-              {/* <span className='flex items-center text-xl  text-text-color'>
+              <span className='flex items-center text-xl  text-text-color'>
                 {nigerianTime} <p className='ml-2'> WAT</p>
-              </span> */}
+              </span>
             </div>
           ) : (
             <div className=''>
@@ -140,9 +138,9 @@ const Hero = function () {
                   <FiMail className='w-7 h-7 text-text-link  font-semibold' />
                 </a>
               </div>
-              {/* <span className='flex items-center text-xl  text-text-color'>
+              <span className='flex items-center text-xl  text-text-color'>
                 {nigerianTime} <p className='ml-2'> WAT</p>
-              </span> */}
+              </span>
             </div>
           )}
         </Fade>
@@ -161,7 +159,7 @@ const Hero = function () {
             ) : (
               // <img src={oshokelight} alt='cartoon' />
               <Image
-                src={cartoon}
+                src={oshokelight}
                 alt='oshoke cartoon'
                 width={700}
                 height={700}

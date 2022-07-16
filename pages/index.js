@@ -10,8 +10,6 @@ const Home = function () {
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
       </Head> */}
       <section>
-        {/* <Hero heroData={hero} />
-        <Articles articlesData={articles} /> */}
         <Hero />
       </section>
     </>
