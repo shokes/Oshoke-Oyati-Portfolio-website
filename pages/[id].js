@@ -13,7 +13,7 @@ const WorkDetails = () => {
   const router = useRouter();
   const { id } = router.query;
   const work = projects.find((project) => +id === project.id);
-  console.log(work);
+
   const {
     title,
     desc,
@@ -34,7 +34,6 @@ const WorkDetails = () => {
       <nav className='  flex items-center justify-between text-text-color'>
         <Link href='/Work'>
           <a
-            href=''
             className='text-xl lg:text-2xl tracking-wider font-extrabold
             underline underline-offset-4'
           >
@@ -97,11 +96,11 @@ const WorkDetails = () => {
         </div>
         <div className='grid grid-cols-1 lg:flex gap-x-3 mt-7 mb-6'>
           <Zoom triggerOnce className='w-full lg:w-1/2 mb-3 lg:mb-0'>
-            <Image src={image} width={600} height={300} />
+            <Image src={image} width={600} height={300} alt='project' />
           </Zoom>
           <Zoom triggerOnce delay={600} className='w-full lg:w-1/2 '>
             {/* <img src={image2} alt='project' /> */}
-            <Image src={image2} width={600} height={300} />
+            <Image src={image2} width={600} height={300} alt='project' />
           </Zoom>
         </div>
         <h3 className='text-2xl font-semibold text-text-link mb-3'>
@@ -145,12 +144,3 @@ const WorkDetails = () => {
   );
 };
 export default WorkDetails;
-
-// WorkDetails.getLayout = (page) => page
-
-//     export default function MyApp({ Component, pageProps }) {
-//       // Use the specified page layout or fallback to the default one.
-//       const getLayout = Component.getLayout ?? defaultPageLayout
-
-//       return getLayout(<Component {...pageProps} />)
-//     }
