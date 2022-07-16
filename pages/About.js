@@ -6,13 +6,11 @@ import Head from 'next/head';
 
 const About = function () {
   return (
-    <section>
+    <section className='overflow-x-hidden'>
       <Head>
         <title>About - Oshoke Oyati</title>
-        {/* <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin /> */}
       </Head>
-      <div className='container mt-20  pb-10 overflow-x-hidden'>
+      <div className='container mt-20  pb-10 '>
         <h2 className='mb-12 text-3xl text-text-color   font-semibold tracking-wider'>
           <BsDashLg className='text-text-link mr-1 inline' />
           about
