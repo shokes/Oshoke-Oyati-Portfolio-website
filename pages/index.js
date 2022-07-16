@@ -4,11 +4,11 @@ import Hero from '../components/Hero/Hero';
 const Home = function () {
   return (
     <>
-      {/* <Head>
-        <title>Next Glass</title>
+      <Head>
+        <title>Oshoke Oyati - Frontend Developer</title>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
-      </Head> */}
+      </Head>
       <section>
         <Hero />
       </section>

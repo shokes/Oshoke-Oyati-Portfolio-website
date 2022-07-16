@@ -2,10 +2,16 @@ import Shokes from '../public/shokes.jpeg';
 import { Zoom, Slide } from 'react-awesome-reveal';
 import { BsDashLg } from 'react-icons/bs';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const About = function () {
   return (
     <section>
+      <Head>
+        <title>About - Oshoke Oyati</title>
+        {/* <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin /> */}
+      </Head>
       <div className='container mt-20  pb-10 overflow-x-hidden'>
         <h2 className='mb-12 text-3xl text-text-color   font-semibold tracking-wider'>
           <BsDashLg className='text-text-link mr-1 inline' />
@@ -13,8 +19,7 @@ const About = function () {
         </h2>
         <div className='grid grid-cols-1  lg:flex space-x-0 lg:space-x-20 '>
           <Zoom triggerOnce>
-            {/* <img className='w-50 h-50 rounded-lg' src={Shokes} alt='Shokes' /> */}
-            <Image src={Shokes} alt='Shokes' width={1000} height={1100} />
+            <Image src={Shokes} alt='Shokes' width={1100} height={1200} />
           </Zoom>
           <div>
             <h3 className='text-lg text-text-color font-bold mt-10 lg:mt-0'>
@@ -41,7 +46,7 @@ const About = function () {
               </p>
 
               <a
-                className='bg-text-link text-background font-semibold px-2 py-1 rounded-lg hover:bg-white hover:text-black ease-in duration-300 '
+                className='bg-text-link text-background font-semibold px-2 py-2 rounded-sm hover:bg-white hover:text-black ease-in duration-300 '
                 href='https://drive.google.com/file/d/1XFaffEA1GGCd_RdK2xFsURu4qUJs-ZKe/view?usp=drivesdk'
                 target='_blank'
                 rel='noreferrer'
