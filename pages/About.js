@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 const About = function () {
   return (
-    <section className='overflow-x-hidden'>
+    <section className='overflow-hidden'>
       <Head>
         <title>About - Oshoke Oyati</title>
       </Head>
@@ -15,9 +15,9 @@ const About = function () {
           <BsDashLg className='text-text-link mr-1 inline' />
           about
         </h2>
-        <div className='grid grid-cols-1  lg:flex space-x-0 lg:space-x-20 '>
+        <div className='grid grid-cols-1  lg:flex items-center space-x-0 lg:space-x-20 '>
           <Zoom triggerOnce>
-            <Image src={Shokes} alt='Shokes' width={1100} height={1200} />
+            <Image src={Shokes} alt='Shokes' width={1100} height={1250} />
           </Zoom>
           <div>
             <h3 className='text-lg text-text-color font-bold mt-10 lg:mt-0'>

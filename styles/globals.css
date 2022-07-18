@@ -8,12 +8,19 @@
   box-sizing: border-box;
 }
 
+/* html {
+  overflow-x: hidden;
+} */
+
 body {
   font-family: 'Archivo', sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: var(--background);
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  overflow-x: hidden;
+  /* width: 100%;
+  overflow-y: hidden; */
 }
 
 :root {
@@ -84,7 +91,6 @@ body {
 
   .project:hover img {
     opacity: 0.5;
-   
   }
 
   .project:hover .see-more {
