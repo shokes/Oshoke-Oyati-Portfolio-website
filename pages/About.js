@@ -24,28 +24,27 @@ const About = function () {
               Hello world. ✨
             </h3>
             <Slide triggerOnce direction='up' delay={200}>
-              <p className='mb-6 mt-3 text-text-color text-xl tracking-wide para '>
+              <p className='mb-5 mt-3 text-text-color text-xl tracking-wide para '>
                 Hi, I&apos;m Oshoke Oyati, a meticulous Frontend Developer
-                currently based in Nigeria and I enjoy what I do. I am
-                passionate about solving complex problems with responsive
-                website design.
+                currently based in Nigeria. I am passionate about solving
+                complex problems with responsive website design.
               </p>
 
-              <p className='mb-6 text-text-color text-xl tracking-wide para'>
-                Proficient in vanilla javascript, hence can easily adapt to any
+              <p className='mb-5 text-text-color text-xl tracking-wide para'>
+                Proficient in vanilla JavaScript, hence can easily adapt to any
                 of its frameworks depending on the requirements of the job.
               </p>
 
-              <p className='mb-6 text-text-color text-xl tracking-wide para'>
-                I&apos;m thrilled by logic; and I solve problems for fun. When
-                I&apos;m not working I&apos;m either watching football games,
-                catching up on my latest shows, listening to music or surfing
-                the internet.
+              <p className='mb-5 text-text-color text-xl tracking-wide para'>
+                I&apos;m thrilled by logic and I solve problems for fun. When
+                I&apos;m not writing code, I&apos;m either watching football
+                games, catching up on my latest shows, listening to music or
+                surfing the internet.
               </p>
 
               <a
                 className='bg-text-link text-background font-semibold px-2 py-2 rounded-sm hover:bg-white hover:text-black ease-in duration-300 '
-                href='https://drive.google.com/file/d/1XFaffEA1GGCd_RdK2xFsURu4qUJs-ZKe/view?usp=drivesdk'
+                href='https://drive.google.com/file/d/1MdxNQLSlFH2jsxNr6-CKTrKtODDDWvQD/view?usp=drivesdk'
                 target='_blank'
                 rel='noreferrer'
               >
@@ -70,14 +69,16 @@ const About = function () {
                   languages/frameworks
                 </div>
                 <ul>
-                  <li className='text-text-color text-lg '>HTML 5</li>
-                  <li className='text-text-color text-lg'>CSS 3</li>
+                  <li className='text-text-color text-lg '>HTML</li>
+                  <li className='text-text-color text-lg'>CSS</li>
+                  <li className='text-text-color text-lg'>Bootstrap</li>
                   <li className='text-text-color text-lg'>TailwindCss</li>
                   <li className='text-text-color text-lg'>Styled components</li>
                   <li className='text-text-color text-lg'>JavaScript</li>
                   <li className='text-text-color text-lg'>ReactJs</li>
                   <li className='text-text-color text-lg'>Redux</li>
                   <li className='text-text-color text-lg'>NextJs</li>
+                  <li className='text-text-color text-lg'>CMS</li>
                 </ul>
               </div>
 
@@ -113,6 +114,15 @@ const About = function () {
                 </div>
                 <span className='text-text-color'>2014-2019</span>
               </div>
+              <div>
+                <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
+                  AltSchool Africa
+                </div>
+                <div className=' capitalize   text-text-color text-base'>
+                  Software Engineering
+                </div>
+                <span className='text-text-color'>2022-present</span>
+              </div>
             </Slide>
           </div>
         </div>
@@ -128,9 +138,9 @@ const About = function () {
             <div className='grid grid-cols-1 md:flex '>
               <div className='md:w-1/2'>
                 <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
-                  IT Consultant
+                  Freelance
                 </div>
-                <span className='text-text-color'>2020-present</span>
+                <span className='text-text-color'>2021-present</span>
               </div>
 
               <div className='md:w-1/2'>
@@ -141,51 +151,6 @@ const About = function () {
                 <p className='text-text-color text-lg'>
                   I help bring various clients&apos; visions into reality
                   through seamless processes and on time delivery.
-                </p>
-              </div>
-            </div>
-          </Slide>
-          <Slide direction='up' triggerOnce>
-            <div className='grid grid-cols-1 md:flex'>
-              <div className='md:w-1/2'>
-                <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
-                  {' '}
-                  Nestle
-                </div>
-                <span className='text-text-color'> June 2018-Dec 2018</span>
-              </div>
-
-              <div className='md:w-1/2'>
-                <div className='font-semibold text-xl capitalize text-text-color md:text-2xl mt-4'>
-                  {' '}
-                  Mechanical Engineer
-                </div>
-                <p className='text-text-color text-lg'>
-                  I managed a variety of customer services and administrative
-                  tasks to resolve customer issues.
-                </p>
-              </div>
-            </div>
-          </Slide>
-
-          <Slide direction='up' triggerOnce>
-            <div className='grid grid-cols-1 md:flex'>
-              <div className='md:w-1/2'>
-                <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
-                  {' '}
-                  AltSchool Africa
-                </div>
-                <span className='text-text-color'>Feb 2022-present</span>
-              </div>
-
-              <div className='md:w-1/2'>
-                <div className='font-semibold text-xl capitalize  text-text-color md:text-2xl mt-4'>
-                  {' '}
-                  Frontend Developer Student
-                </div>
-                <p className='text-text-color text-lg'>
-                  Excited to begin my journey at a very good school that teaches
-                  skills that apply to my everyday work.
                 </p>
               </div>
             </div>
