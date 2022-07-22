@@ -44,7 +44,7 @@ const About = function () {
 
               <a
                 className='bg-text-link text-background font-semibold px-2 py-2 rounded-sm hover:bg-white hover:text-black ease-in duration-300 '
-                href='https://drive.google.com/file/d/1MdxNQLSlFH2jsxNr6-CKTrKtODDDWvQD/view?usp=drivesdk'
+                href='https://drive.google.com/file/d/1HiovPZfNQvO9PN6VNKK3FRl7fEsTc_h0/view?usp=drivesdk'
                 target='_blank'
                 rel='noreferrer'
               >
@@ -75,6 +75,7 @@ const About = function () {
                   <li className='text-text-color text-lg'>TailwindCss</li>
                   <li className='text-text-color text-lg'>Styled components</li>
                   <li className='text-text-color text-lg'>JavaScript</li>
+                  <li className='text-text-color text-lg'>TypeScript</li>
                   <li className='text-text-color text-lg'>ReactJs</li>
                   <li className='text-text-color text-lg'>Redux</li>
                   <li className='text-text-color text-lg'>NextJs</li>
