@@ -44,7 +44,7 @@ const About = function () {
 
               <a
                 className='bg-text-link text-background font-semibold px-2 py-2 rounded-sm hover:bg-white hover:text-black ease-in duration-300 '
-                href='https://drive.google.com/file/d/1HiovPZfNQvO9PN6VNKK3FRl7fEsTc_h0/view?usp=drivesdk'
+                href='https://drive.google.com/file/d/1Hf-ftvMKSu-rqr-c5NUa-3iGOGGaTe_7/view?usp=drivesdk'
                 target='_blank'
                 rel='noreferrer'
               >
