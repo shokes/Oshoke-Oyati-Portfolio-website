@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 const Layout = ({ children, activePage }) => {
   return (
-    <section>
+    <section className='overflow-hidden'>
       <Head>
         <title>{activePage} - Oshoke Oyati</title>
       </Head>
