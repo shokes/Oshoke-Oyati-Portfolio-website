@@ -37,7 +37,7 @@ const projects = [
     para1:
       'After learning the fundamentals of TypeScript, I wanted to put that knowledge into use. I worked on this project integrating NextJS and TypeScript. I wanted to use a state management I had not used before so I went with Redux TK.',
     para2:
-      'CSS is my go-to for styling in React applications and my preferred tool for that is TailwindCSS',
+      'CSS in JS is my go-to for styling in React applications and my preferred tool for that is TailwindCSS',
     para3:
       'I was able to appreciate and understand how TypeScript minimizes potential bugs in middle - large scale JavaScript applications.',
   },
