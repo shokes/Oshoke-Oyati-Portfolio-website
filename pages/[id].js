@@ -21,7 +21,7 @@ const WorkDetails = () => {
     const { id } = router.query;
 
     setIdNumber(id);
-  }, [router.isReady]);
+  }, [router.isReady, router.query]);
 
   const work = projects.find((project) => +idNumber === project.id);
 
@@ -44,8 +44,6 @@ const WorkDetails = () => {
     <section>
       <Head>
         <title>{title} - Work</title>
-        {/* <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin /> */}
       </Head>
       <div className='pt-12 container'>
         <nav className='  flex items-center justify-between text-text-color'>
@@ -148,8 +146,7 @@ const WorkDetails = () => {
                 return (
                   <Link href={`/${item.id}`} key={item.id}>
                     <a className='mb-6 mr-2 text-text-link uppercase  para underline underline-offset-4'>
-                      {' '}
-                      {item.title},
+                      {item.title}
                     </a>
                   </Link>
                 );

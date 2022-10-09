@@ -2,14 +2,12 @@ import Shokes from '../public/shokes.jpeg';
 import { Zoom, Slide } from 'react-awesome-reveal';
 import { BsDashLg } from 'react-icons/bs';
 import Image from 'next/image';
-import Head from 'next/head';
+import Layout from '../components/Layout/Layout';
 
 const About = function () {
+  const activePage = 'About'
   return (
-    <section className='overflow-hidden'>
-      <Head>
-        <title>About - Oshoke Oyati</title>
-      </Head>
+    <Layout className='overflow-hidden' activePage={activePage}>
       <div className='container mt-20  pb-10 '>
         <h2 className='mb-12 text-3xl text-text-color   font-semibold tracking-wider'>
           <BsDashLg className='text-text-link mr-1 inline' />
@@ -158,7 +156,7 @@ const About = function () {
           </Slide>
         </div>
       </div>
-    </section>
+    </Layout>
   );
 };
 

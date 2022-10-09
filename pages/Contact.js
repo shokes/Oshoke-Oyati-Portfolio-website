@@ -1,13 +1,11 @@
 import { BsDashLg } from 'react-icons/bs';
 import { Slide } from 'react-awesome-reveal';
-import Head from 'next/head';
+import Layout from '../components/Layout/Layout';
 
 const Contact = function () {
+  const activePage = 'Contact';
   return (
-    <section>
-      <Head>
-        <title>Contact - Oshoke Oyati</title>
-      </Head>
+    <Layout activePage={activePage}>
       <div className='container mt-20 pb-20'>
         <h2 className='mb-12 text-3xl text-text-color mt-20 font-semibold tracking-wider'>
           <BsDashLg className='text-text-link mr-1 inline ' />
@@ -65,7 +63,7 @@ const Contact = function () {
           </div>
         </div>
       </div>
-    </section>
+    </Layout>
   );
 };
 

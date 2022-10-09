@@ -148,7 +148,6 @@ const Hero = function () {
         <Slide direction='right' duration={1000}>
           <div className='w-64 hidden lg:block'>
             {theme === 'dark-theme' ? (
-              // <img src={cartoon} alt='cartoon' />
               <Image
                 src={cartoon}
                 alt='oshoke cartoon'
@@ -157,7 +156,6 @@ const Hero = function () {
                 className=' rounded-full'
               />
             ) : (
-              // <img src={oshokelight} alt='cartoon' />
               <Image
                 src={oshokelight}
                 alt='oshoke cartoon'

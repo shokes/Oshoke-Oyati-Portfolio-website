@@ -1,10 +1,7 @@
 import country from './public/country rest.png';
 import omuwa from './public/omuwa-photography.png';
-import portfolioV1 from './public/portfolio-screenshot.png';
 import countryInfo from './public/countryInfo.jpg';
 import photography from './public/photography.jpg';
-import port from './public/port1.png';
-import port2 from './public/port2.png';
 import country2 from './public/country2.png';
 import nextglass from './public/nextglass.png';
 import nextglass2 from './public/nextglass2.png';
@@ -13,17 +10,46 @@ import omuwa2 from './public/omuwa2.png';
 import BGKICKS from './public/30BGKICKS.jpg';
 import bgkicks1 from './public/bgkicks1.png';
 import bgkicks2 from './public/bgkicks2.png';
+import netflix1 from './public/netflix-clone.png';
+import netflix2 from './public/netlifx-clone2.png';
+import netflixmain from './public/netflixmain.jpg';
 
 const projects = [
   {
     id: 1,
+    title: 'Netflix Clone',
+    image: netflix1,
+    image2: netflix2,
+    desc: 'A clone of Netflix.',
+    website: 'https://netflix-ts-phi.vercel.app/',
+    github: 'https://github.com/shokes/Netflix-ts',
+    stack: [
+      'NextJS',
+      'ReactJS',
+      'TypeScript',
+      'Redux TK',
+      'TailwindCSS',
+      'API',
+    ],
+    role: 'Frontend development.',
+    mainImage: netflixmain,
+    year: 2022,
+    para1:
+      'After learning the fundamentals of TypeScript, I wanted to put that knowledge into use. I worked on this project integrating NextJS and TypeScript. I wanted to use a state management I had not used before so I went with Redux TK.',
+    para2:
+      'CSS is my go-to for styling in React applications and my preferred tool for that is TailwindCSS',
+    para3:
+      'I was able to appreciate and understand how TypeScript minimizes potential bugs in middle - large scale JavaScript applications.',
+  },
+  {
+    id: 2,
     title: '30BG KICKS',
     image: bgkicks1,
     image2: bgkicks2,
     desc: 'An E-commerce web app with authentication and payment integration.',
     website: 'https://30bgkicks.vercel.app/',
     github: 'https://github.com/shokes/30BGKICKS',
-    stack: ['React', 'TailwindCss', 'Paystack API', 'React-router', 'Auth0'],
+    stack: ['ReactJS', 'TailwindCSS', 'Paystack API', 'React-router', 'Auth0'],
     role: 'Frontend development.',
     mainImage: BGKICKS,
     year: 2022,
@@ -35,14 +61,14 @@ const projects = [
       'The process was mostly enjoyable as I had fun playing around with some new stuff like payment integration using the paystack api, tailwind css for styling and authentication with auth0.',
   },
   {
-    id: 2,
-    title: 'country info',
+    id: 3,
+    title: 'Country Info',
     image: country,
     image2: country2,
     desc: 'A web app that displays info of a country as requested with a theme switcher.',
     website: 'https://countries-infoo.vercel.app/',
     github: 'https://github.com/shokes/Country-rest-API',
-    stack: ['React', 'CSS 3', 'API', 'React-router'],
+    stack: ['ReactJS', 'CSS 3', 'API', 'React-router'],
     role: 'Frontend development.',
     mainImage: countryInfo,
     year: 2022,
@@ -56,14 +82,14 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: 'Next Glass',
     image: nextglass,
     image2: nextglass2,
     desc: 'A minimal and beautiful NextJS personal blog with a nice glassmorphism ui coupled with sanity cms for content management.',
     website: 'https://next-glass-gamma.vercel.app/',
     github: 'https://github.com/shokes/Next-Glass',
-    stack: ['NextJS', 'React', 'TailwindCSS', 'Sanity CMS'],
+    stack: ['NextJS', 'ReactJS', 'TailwindCSS', 'Sanity CMS'],
     role: 'Frontend development. ',
     mainImage: nextGlass,
     year: 2022,
@@ -76,14 +102,14 @@ const projects = [
   },
 
   {
-    id: 4,
-    title: 'omuwa photography',
+    id: 5,
+    title: 'Omuwa Photography',
     image: omuwa,
     image2: omuwa2,
     desc: 'A portfolio website for a photographer.',
     website: 'https://omuwa-photography.vercel.app/',
     github: 'https://github.com/shokes/Omuwa-Photography',
-    stack: ['React', 'CSS 3', 'React-router'],
+    stack: ['ReactJS', 'CSS 3', 'React-router'],
 
     role: 'Frontend development. ',
     mainImage: photography,
@@ -94,26 +120,6 @@ const projects = [
       'After my understanding of the fundamentals of React, I wanted to apply that knowledge immediately into something simple but beautiful and this was the result. ',
     para3:
       'I wanted the site to have some simple animation too, I used React awesome reveal for that. CSS 3 is my go to for styling. ',
-  },
-
-  {
-    id: 5,
-    title: 'Previous portfolio',
-    image: port,
-    image2: port2,
-    desc: 'My first portfolio website.',
-    website: 'https://shokes.vercel.app/',
-    github: 'https://github.com/shokes/Porfolio-website',
-    stack: ['HTML 5', 'CSS 3', 'vanilla JavaScript'],
-    role: 'Frontend development. ',
-    mainImage: portfolioV1,
-    year: 2021,
-    para1:
-      'This is the first version of my portfolio website made with HTML 5, CSS 3 and a little Javascript. ',
-    para2:
-      'After the first few months of learning HTML, CSS and JS, I was eager to have a website where I can showcase projects I had worked on and this was what i built. I got to master some interesting CSS properties like grid and flex box. ',
-    para3:
-      'It still contains some of the projects I worked on in my early days learning frontend developerment. ',
   },
 ];
 

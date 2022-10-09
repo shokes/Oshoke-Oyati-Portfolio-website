@@ -8,19 +8,13 @@
   box-sizing: border-box;
 }
 
-/* html {
-  overflow-x: hidden;
-} */
-
 body {
   font-family: 'Archivo', sans-serif;
-  /* overflow-x: hidden; */
+
   background-color: var(--background);
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   overflow-x: hidden;
-  /* width: 100%;
-  overflow-y: hidden; */
 }
 
 :root {
@@ -107,7 +101,7 @@ body {
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 .hover-underline-animation:after {
