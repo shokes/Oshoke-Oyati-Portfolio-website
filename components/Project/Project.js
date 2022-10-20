@@ -28,14 +28,14 @@ const SingleWork = function ({ title, desc, mainImage, id }) {
           </Slide>
         </div>
 
-        <Link href={`/${id}`} className='  w-full '>
-          <div className='relative cursor-pointer project  md:w-[29rem]'>
+        <Link href={`/${id}`} className='   '>
+          <div className='relative cursor-pointer project w-full md:w-[464px]'>
             <Image
               src={mainImage}
               alt='project'
               className='project-image'
-              width={464}
-              height={560}
+              width={664}
+              height={760}
             />
             <span className='absolute top-1/3 font-semibold right-1/2 bg-white translate-y-[1.5rem] translate-x-1/2  see-more     p-14 w-5 h-5 flex items-center justify-center rounded-full text-black'>
               See more
