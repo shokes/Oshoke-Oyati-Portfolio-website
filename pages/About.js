@@ -3,11 +3,28 @@ import { Zoom, Slide } from 'react-awesome-reveal';
 import { BsDashLg } from 'react-icons/bs';
 import Image from 'next/image';
 import Layout from '../components/Layout/Layout';
+import Head from 'next/head';
 
 const About = function () {
-  const activePage = 'About'
+  const activePage = 'About';
   return (
     <Layout className='overflow-hidden' activePage={activePage}>
+      <Head>
+        <title>{activePage} - Oshoke Oyati</title>
+        <meta
+          name='description'
+          content='About frontend develeper, Oshoke Oyati.'
+        />
+        <meta property='og:title' content='About - Oshoke Oyati.' />
+        <meta
+          property='og:description'
+          content='About frontend develeper, Oshoke Oyati.'
+        />
+        <meta property='og:url' content='https://oshoke.vercel.app/About' />
+        <meta property='og:type' content='website' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+      </Head>
       <div className='container mt-20  pb-10 '>
         <h2 className='mb-12 text-3xl text-text-color   font-semibold tracking-wider'>
           <BsDashLg className='text-text-link mr-1 inline' />
@@ -64,7 +81,7 @@ const About = function () {
             <div className='grid grid-cols-1 md:flex '>
               <div className='w-1/2'>
                 <div className='font-bold capitalize text-text-color text-2xl mt-4 mb-2'>
-                  languages/frameworks
+                  technologies
                 </div>
                 <ul>
                   <li className='text-text-color text-lg '>HTML</li>
@@ -77,6 +94,10 @@ const About = function () {
                   <li className='text-text-color text-lg'>ReactJs</li>
                   <li className='text-text-color text-lg'>Redux</li>
                   <li className='text-text-color text-lg'>NextJs</li>
+                  <li className='text-text-color text-lg'>
+                    React testing library
+                  </li>
+                  <li className='text-text-color text-lg'>Jest</li>
                   <li className='text-text-color text-lg'>CMS</li>
                 </ul>
               </div>

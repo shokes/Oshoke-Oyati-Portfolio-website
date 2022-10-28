@@ -5,7 +5,7 @@ import Image from 'next/image';
 const SingleWork = function ({ title, desc, mainImage, id }) {
   return (
     <section>
-      <div className='grid grid-cols-1 lg:flex justify-between items-center mb-10 overflow-hidden'>
+      <div className='grid grid-cols-1 lg:flex justify-between items-center mb-14 overflow-hidden'>
         <div className=''>
           <Link href={`/${id}`}>
             <div>
@@ -28,7 +28,7 @@ const SingleWork = function ({ title, desc, mainImage, id }) {
           </Slide>
         </div>
 
-        <Link href={`/${id}`} className='   '>
+        <Link href={`/${id}`}>
           <div className='relative cursor-pointer project w-full md:w-[464px]'>
             <Image
               src={mainImage}

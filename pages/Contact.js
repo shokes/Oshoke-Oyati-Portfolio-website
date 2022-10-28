@@ -1,11 +1,28 @@
 import { BsDashLg } from 'react-icons/bs';
 import { Slide } from 'react-awesome-reveal';
 import Layout from '../components/Layout/Layout';
+import Head from 'next/head';
 
 const Contact = function () {
   const activePage = 'Contact';
   return (
     <Layout activePage={activePage}>
+      <Head>
+        <title>{activePage} - Oshoke Oyati</title>
+        <meta
+          name='description'
+          content='Contact frontend develeper, Oshoke Oyati.'
+        />
+        <meta property='og:title' content='Contact - Oshoke Oyati.' />
+        <meta
+          property='og:description'
+          content='Contact frontend develeper, Oshoke Oyati.'
+        />
+        <meta property='og:url' content='https://oshoke.vercel.app/Contact' />
+        <meta property='og:type' content='website' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+      </Head>
       <div className='container mt-20 pb-20'>
         <h2 className='mb-12 text-3xl text-text-color mt-20 font-semibold tracking-wider'>
           <BsDashLg className='text-text-link mr-1 inline ' />

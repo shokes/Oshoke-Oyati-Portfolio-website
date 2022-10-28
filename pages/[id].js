@@ -26,6 +26,7 @@ const WorkDetails = () => {
   const work = projects.find((project) => +idNumber === project.id);
 
   const {
+    id,
     title,
     desc,
     stack,
@@ -44,6 +45,19 @@ const WorkDetails = () => {
     <section>
       <Head>
         <title>{title} - Work</title>
+        <meta
+          name='description'
+          content={`${title} - frontend develeper, Oshoke Oyati.`}
+        />
+        <meta property='og:title' content={`${title} - Oshoke Oyati.`} />
+        <meta
+          property='og:description'
+          content={`${title} - frontend develeper, Oshoke Oyati.`}
+        />
+        <meta property='og:url' content={`https://oshoke.vercel.app/${id}`} />
+        <meta property='og:type' content='website' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
       </Head>
       <div className='pt-12 container'>
         <nav className='  flex items-center justify-between text-text-color'>
