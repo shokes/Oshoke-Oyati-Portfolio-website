@@ -25,8 +25,8 @@ const Hero = function () {
   }, 500);
 
   return (
-    <section>
-      <div className='container md:pb-24 lg:flex mt-28 justify-center items-center gap-x-48   overflow-x-hidden '>
+    <section className='py-[80px]'>
+      <div className='container  md:pb-24  lg:flex  justify-center items-center gap-x-48   overflow-x-hidden '>
         <Fade duration={3000}>
           {theme === 'dark-theme' ? (
             <div className=''>
