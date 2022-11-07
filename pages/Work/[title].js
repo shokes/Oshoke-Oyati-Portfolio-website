@@ -1,16 +1,16 @@
-import projects from '../data';
+import projects from '../../data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Zoom, Slide } from 'react-awesome-reveal';
 import { BsToggleOff, BsToggleOn } from 'react-icons/bs';
 import { useRouter } from 'next/router';
-import { useGlobalContext } from '../context';
+import { useGlobalContext } from '../../context';
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 
 const WorkDetails = () => {
   const { theme, themeHandler } = useGlobalContext();
-  const [idNumber, setIdNumber] = useState(2);
+  const [theProject, setTheProject] = useState('30BG KICKS');
 
   // looking for the dynamic id
   const router = useRouter();
@@ -18,12 +18,12 @@ const WorkDetails = () => {
   useEffect(() => {
     if (!router.isReady) return;
     // codes using router.query
-    const { id } = router.query;
+    const { title } = router.query;
 
-    setIdNumber(id);
+    setTheProject(title);
   }, [router.isReady, router.query]);
 
-  const work = projects.find((project) => +idNumber === project.id);
+  const work = projects.find((project) => project.title === theProject);
 
   const {
     id,
@@ -155,12 +155,12 @@ const WorkDetails = () => {
           <p className='text-text-color text-xl'>
             <span className='mr-1'> I also built </span>
             {projects
-              .filter((item) => +idNumber !== item.id)
-              .map((item) => {
+              .filter((project) => theProject !== project.title)
+              .map((project) => {
                 return (
-                  <Link href={`/${item.id}`} key={item.id}>
+                  <Link href={`/Work/${project.title}`} key={project.id}>
                     <a className='mb-6 mr-2 text-text-link uppercase  para underline underline-offset-4'>
-                      {item.title}
+                      {project.title}
                     </a>
                   </Link>
                 );
