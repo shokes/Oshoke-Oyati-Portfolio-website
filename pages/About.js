@@ -59,7 +59,7 @@ const About = function () {
 
               <a
                 className='bg-text-link text-background font-semibold px-2 py-2 rounded-sm hover:bg-white hover:text-black ease-in duration-300 '
-                href='https://drive.google.com/file/d/1PAUisCxXNZbt1E7s1pybb4stmelK-gWw/view'
+                href='https://drive.google.com/file/d/1fn0-pBB_kmesRFMNGrtvbAzSVThpfmiA/view?usp=share_link'
                 target='_blank'
                 rel='noreferrer'
               >
@@ -84,21 +84,20 @@ const About = function () {
                   technologies
                 </div>
                 <ul>
-                  <li className='text-text-color text-lg '>HTML</li>
-                  <li className='text-text-color text-lg'>CSS</li>
-                  <li className='text-text-color text-lg'>Bootstrap</li>
-                  <li className='text-text-color text-lg'>TailwindCss</li>
-                  <li className='text-text-color text-lg'>Styled components</li>
+                  <li className='text-text-color text-lg '>HTML/CSS</li>
+                  <li className='text-text-color text-lg'>TailwindCSS</li>
+                  <li className='text-text-color text-lg'>Styled Components</li>
                   <li className='text-text-color text-lg'>JavaScript</li>
                   <li className='text-text-color text-lg'>TypeScript</li>
                   <li className='text-text-color text-lg'>ReactJs</li>
                   <li className='text-text-color text-lg'>Redux</li>
                   <li className='text-text-color text-lg'>NextJs</li>
                   <li className='text-text-color text-lg'>
-                    React testing library
+                    React Testing Library
                   </li>
+                  <li className='text-text-color text-lg'>Firebase</li>
                   <li className='text-text-color text-lg'>Jest</li>
-                  <li className='text-text-color text-lg'>CMS</li>
+                  <li className='text-text-color text-lg'>GraphQL</li>
                 </ul>
               </div>
 
