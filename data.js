@@ -13,10 +13,40 @@ import bgkicks2 from './public/bgkicks2.png';
 import netflix1 from './public/netflix-clone.png';
 import netflix2 from './public/netlifx-clone2.png';
 import netflixmain from './public/netflixmain.jpg';
+import cryptoBlazeMain from './public/cryptoBlazemain.jpg';
+import cryptoBlaze1 from './public/cryptoBlaze1.png';
+import cryptoBlaze2 from './public/cryptoBlaze2.png';
 
 const projects = [
   {
     id: 1,
+    title: 'CryptoBlaze',
+    image: cryptoBlaze1,
+    image2: cryptoBlaze2,
+    desc: 'A web application keeping you informed about the prices of cryptocurrencies with a portfolio to track your favorite coins.',
+    website: 'https://crypto-blaze-pearl.vercel.app/',
+    github: 'https://github.com/shokes/CryptoBlaze',
+    stack: [
+      'NextJS',
+      'ReactJS',
+      'TypeScript',
+      'Redux TK',
+      'TailwindCSS',
+      'Firebase',
+      'Framer motion',
+    ],
+    role: 'Frontend development.',
+    mainImage: cryptoBlazeMain,
+    year: 2022,
+    para1:
+      'Before now, I have written applications where data was stored using the native JavaScript localStorage.setItem() method or with redux-persist. For this application, I wanted to build something more practical for the backend and this was were Firebase came into play. I used Firebase to handle authentication and data storage.',
+    para2:
+      'The app was written integrating TypeScript and NextJS. Big fan of TailwindCSS so it was used for the styling as it is with most of my side projects. A few other tools were used like framer motion for animation, Lenis for smooth scroll effect and React hot toast for notification.',
+    para3:
+      "Firebase's docs are not the best but I appreciate the ease at which backend logic is handled.",
+  },
+  {
+    id: 2,
     title: 'Netflix Clone',
     image: netflix1,
     image2: netflix2,
@@ -42,7 +72,7 @@ const projects = [
       'I was able to appreciate and understand how TypeScript minimizes potential bugs in middle - large scale JavaScript applications.',
   },
   {
-    id: 2,
+    id: 3,
     title: '30BG KICKS',
     image: bgkicks1,
     image2: bgkicks2,
@@ -61,7 +91,7 @@ const projects = [
       'The process was mostly enjoyable as I had fun playing around with some new stuff like payment integration using the paystack api, tailwind css for styling and authentication with auth0.',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Country Info',
     image: country,
     image2: country2,
@@ -82,7 +112,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: 'Next Glass',
     image: nextglass,
     image2: nextglass2,
@@ -102,7 +132,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: 'Omuwa Photography',
     image: omuwa,
     image2: omuwa2,
