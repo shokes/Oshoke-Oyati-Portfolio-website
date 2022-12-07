@@ -130,7 +130,7 @@ const WorkDetails = () => {
                 width={600}
                 height={300}
                 alt='project'
-                placeholder='blue'
+                placeholder='blur'
               />
             </Zoom>
             <Zoom triggerOnce delay={600} className='w-full lg:w-1/2 '>
