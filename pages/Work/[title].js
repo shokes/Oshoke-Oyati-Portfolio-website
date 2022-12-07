@@ -125,10 +125,22 @@ const WorkDetails = () => {
           </div>
           <div className='grid grid-cols-1 lg:flex gap-x-3 mt-7 mb-6'>
             <Zoom triggerOnce className='w-full lg:w-1/2 mb-3 lg:mb-0'>
-              <Image src={image} width={600} height={300} alt='project' />
+              <Image
+                src={image}
+                width={600}
+                height={300}
+                alt='project'
+                placeholder='blue'
+              />
             </Zoom>
             <Zoom triggerOnce delay={600} className='w-full lg:w-1/2 '>
-              <Image src={image2} width={600} height={300} alt='project' />
+              <Image
+                src={image2}
+                width={600}
+                height={300}
+                alt='project'
+                placeholder='blur'
+              />
             </Zoom>
           </div>
           <h3 className='text-2xl font-semibold text-text-link mb-3'>

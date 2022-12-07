@@ -36,6 +36,7 @@ const SingleWork = function ({ title, desc, mainImage, id }) {
               className='project-image'
               width={664}
               height={760}
+              placeholder='blur'
             />
             <span className='absolute top-1/3 font-semibold right-1/2 bg-white translate-y-[1.5rem] translate-x-1/2  see-more     p-14 w-5 h-5 flex items-center justify-center rounded-full text-black'>
               See more
