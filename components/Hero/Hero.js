@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 const Hero = function () {
   const { theme } = useGlobalContext();
-  const [nigerianTime, setNigerianTime] = useState('');
+  const [WAT, setWAT] = useState('');
 
   const checkTime = () => {
     const now = new Date();
@@ -17,7 +17,7 @@ const Hero = function () {
       minute: 'numeric',
     };
 
-    setNigerianTime(Intl.DateTimeFormat('en-NG', options).format(now));
+    setWAT(Intl.DateTimeFormat('en-NG', options).format(now));
   };
 
   setInterval(() => {
@@ -83,7 +83,7 @@ const Hero = function () {
               </div>
 
               <span className='flex items-center text-xl  text-text-color'>
-                {nigerianTime} <p className='ml-2'> WAT</p>
+                {WAT} <p className='ml-2'> WAT</p>
               </span>
             </div>
           ) : (
@@ -147,23 +147,14 @@ const Hero = function () {
 
         <Slide direction='right' duration={1000}>
           <div className='w-64 hidden lg:block'>
-            {theme === 'dark-theme' ? (
-              <Image
-                src={cartoon}
-                alt='oshoke cartoon'
-                width={700}
-                height={700}
-                className=' rounded-full'
-              />
-            ) : (
-              <Image
-                src={oshokelight}
-                alt='oshoke cartoon'
-                width={700}
-                height={700}
-                className=' rounded-full'
-              />
-            )}
+            <Image
+              src={theme === 'dark-theme' ? cartoon : oshokelight}
+              alt='oshoke cartoon'
+              width={700}
+              height={700}
+              className=' rounded-full'
+              placeholder='blur'
+            />
           </div>
         </Slide>
       </div>
