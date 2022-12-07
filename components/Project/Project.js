@@ -21,11 +21,11 @@ const SingleWork = function ({ title, desc, mainImage, id }) {
             <div className='border-4 border-text-link  w-1/2 md:w-1/4 mb-6 lg:w-1/2'></div>
           </Slide>
 
-          <Slide delay={400} triggerOnce direction='up'>
+          <Fade triggerOnce duration={1500}>
             <p className='text-text-color mb-3 lg:mb-0 text-2xl w-[18rem]'>
               {desc}
             </p>
-          </Slide>
+          </Fade>
         </div>
 
         <Link href={`Work/${title}`}>
