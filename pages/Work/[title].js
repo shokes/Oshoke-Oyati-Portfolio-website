@@ -179,7 +179,7 @@ const WorkDetails = () => {
                 return (
                   <div key={project.id} className='inline-block'>
                     <Link href={`/Work/${project.title}`}>
-                      <a className='mb-6 text-text-link uppercase  para underline underline-offset-4'>
+                      <a className='mb-6 text-text-link uppercase  para project-link'>
                         {project.title}
                       </a>
                     </Link>

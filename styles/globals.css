@@ -31,6 +31,10 @@ body {
   --border: #495057;
 }
 
+.project-link {
+  box-shadow: 0 2px var(--text-link);
+}
+
 .light-theme {
   --text-link: #d23669;
   --text-color: #343a40;
