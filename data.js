@@ -39,11 +39,11 @@ const projects = [
     mainImage: cryptoBlazeMain,
     year: 2022,
     para1:
-      'Before now, I have written applications where data was stored using the native JavaScript localStorage.setItem() method or with redux-persist. For this application, I wanted to build something more practical for the backend and this was were Firebase came into play. I used Firebase to handle authentication and data storage.',
+      'Before now, I have written applications where data was stored using the native JavaScript localStorage.setItem() method or with redux-persist. For this application, I wanted to build something more practical for the backend and this was where Firebase came into play. I used Firebase to handle authentication and data storage.',
     para2:
-      'The app was written integrating TypeScript and NextJS. Big fan of TailwindCSS so it was used for the styling as it is with most of my side projects. A few other tools were used like framer motion for animation, Lenis for smooth scroll effect and React hot toast for notification.',
+      'The app was written integrating TypeScript and NextJS. Big fan of TailwindCSS so it was used for the styling as it is with most of my side projects. A few other tools I used were framer motion for animation, Lenis for the smooth scroll effect and React hot toast to handle notification.',
     para3:
-      "Firebase's docs are not the best but I appreciate the ease at which backend logic is handled.",
+      "Firebase's docs are not the best but I appreciate the ease at which I was able to implement authentication and data storage.",
   },
   {
     id: 2,
@@ -88,7 +88,7 @@ const projects = [
     para2:
       'Another difficulty was while sorting the array, it kept on mutating the original so i had to spread out before sorting to prevent mutating. A simple fix it might seem, but it took me sometime to figure the root of the issue. ',
     para3:
-      'The process was mostly enjoyable as I had fun playing around with some new stuff like payment integration using the paystack api, tailwind css for styling and authentication with auth0.',
+      'The process was mostly enjoyable as I had fun playing around with some new stuff like payment integration using the Paystack API, TailwindCSS for styling and authentication with Auth0.',
   },
   {
     id: 4,

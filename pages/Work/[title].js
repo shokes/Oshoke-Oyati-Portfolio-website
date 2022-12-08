@@ -164,20 +164,34 @@ const WorkDetails = () => {
           >
             <p> {para3} </p>
           </Slide>
-          <p className='text-text-color text-xl'>
+          <div className='text-text-color text-xl'>
             <span className='mr-1'> I also built </span>
             {projects
               .filter((project) => theProject !== project.title)
-              .map((project) => {
+              .map((project, index) => {
+                let separator;
+                if (index === projects.length - 3) {
+                  separator = 'and';
+                } else if (index === projects.length - 2) {
+                  separator = '.';
+                } else separator = ',';
+
                 return (
-                  <Link href={`/Work/${project.title}`} key={project.id}>
-                    <a className='mb-6 mr-2 text-text-link uppercase  para underline underline-offset-4'>
-                      {project.title}
-                    </a>
-                  </Link>
+                  <div key={project.id} className='inline-block'>
+                    <Link href={`/Work/${project.title}`}>
+                      <a className='mb-6 text-text-link uppercase  para underline underline-offset-4'>
+                        {project.title}
+                      </a>
+                    </Link>
+                    <span
+                      className={`mr-2 ${separator === 'and' ? 'ml-2' : null}`}
+                    >
+                      {separator}
+                    </span>
+                  </div>
                 );
               })}
-          </p>
+          </div>
         </div>
       </div>
     </section>
