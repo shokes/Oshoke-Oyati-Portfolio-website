@@ -139,7 +139,7 @@ const Hero = function () {
                 </a>
               </div>
               <span className='flex items-center text-xl  text-text-color'>
-                {nigerianTime} <p className='ml-2'> WAT</p>
+                {WAT} <p className='ml-2'> WAT</p>
               </span>
             </div>
           )}
