@@ -126,7 +126,7 @@ const projects = [
     para1:
       'After getting a basic understanding of NextJS and a headless CMS, I wanted to build something with it and this was the result. I wanted the user interface to be minimal and beautiful and use the Glassmorphism design trend. I also wanted non-technical users to be able to add and update the site content easily. ',
     para2:
-      'After checking several headless cms, I decided to choose Sanity because it is simple, has an intuitive content editor and generous pricing.',
+      'After checking several headless CMS, I decided to choose Sanity because it is simple, has an intuitive content editor and generous pricing.',
     para3:
       'NextJS did not take long to get hold of because of its great docs, kudos to the team at vercel. After some googling, i was able to figure out connecting a CMS to it.',
   },
