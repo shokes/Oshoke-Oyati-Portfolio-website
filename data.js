@@ -147,7 +147,7 @@ const projects = [
     para1:
       'This is a simple and minimal portfolio website for a photographer. ',
     para2:
-      'After my understanding of the fundamentals of React, I wanted to apply that knowledge immediately into something simple but beautiful and this was the result. ',
+      'After my understanding of the fundamentals of ReactJS, I wanted to apply that knowledge immediately into something simple but beautiful and this was the result. ',
     para3:
       'I wanted the site to have some simple animation too, I used React awesome reveal for that. CSS 3 is my go to for styling. ',
   },
