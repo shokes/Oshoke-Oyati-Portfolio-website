@@ -59,7 +59,7 @@ const About = function () {
               <p className='mb-5 text-text-color text-xl tracking-wide para'>
                 I&apos;m thrilled by logic and I solve problems for fun. When
                 I&apos;m not writing code, I&apos;m either watching football
-                games, catching up on my latest shows, listening to music or
+                games, catching up on the latest TV shows, listening to music or
                 surfing the internet.
               </p>
 
