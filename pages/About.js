@@ -132,21 +132,21 @@ const About = function () {
             <Slide direction='up' triggerOnce>
               <div>
                 <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
-                  Ambrose Alli University
-                </div>
-                <div className=' capitalize   text-text-color text-base'>
-                  B.Eng Mechanical Engineering
-                </div>
-                <span className='text-text-color'>2014-2019</span>
-              </div>
-              <div>
-                <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
                   AltSchool Africa
                 </div>
                 <div className=' capitalize   text-text-color text-base'>
                   Software Engineering
                 </div>
                 <span className='text-text-color'>2022-present</span>
+              </div>
+              <div>
+                <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
+                  Ambrose Alli University
+                </div>
+                <div className=' capitalize   text-text-color text-base'>
+                  B.Eng Mechanical Engineering
+                </div>
+                <span className='text-text-color'>2014-2019</span>
               </div>
             </Slide>
           </div>
@@ -159,13 +159,14 @@ const About = function () {
           <Slide direction='right' duration={2000} triggerOnce>
             <div className='w-full border boder-b border-border'></div>
           </Slide>
+
           <Slide direction='up' triggerOnce>
             <div className='grid grid-cols-1 md:flex '>
               <div className='md:w-1/2'>
                 <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
-                  Freelance
+                  2b Creative
                 </div>
-                <span className='text-text-color'>2021-present</span>
+                <span className='text-text-color'>2022-present</span>
               </div>
 
               <div className='md:w-1/2'>
@@ -174,8 +175,8 @@ const About = function () {
                   Frontend Developer
                 </div>
                 <p className='text-text-color text-lg'>
-                  I help bring various clients&apos; visions into reality
-                  through seamless processes and on time delivery.
+                  Collaborated in the development and maintenance of a range of
+                  NextJS websites.
                 </p>
               </div>
             </div>
