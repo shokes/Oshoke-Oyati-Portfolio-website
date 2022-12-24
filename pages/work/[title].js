@@ -169,7 +169,11 @@ const WorkDetails = () => {
           <div className='text-text-color text-xl'>
             <span className='mr-1'> I also built </span>
             {projects
-              .filter((project) => theProject !== project.title)
+              .filter(
+                (project) =>
+                  theProject.toLocaleLowerCase() !==
+                  project.title.toLocaleLowerCase()
+              )
               .map((project, index) => {
                 let separator;
                 if (index === projects.length - 3) {
