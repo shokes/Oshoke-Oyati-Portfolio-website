@@ -23,7 +23,9 @@ const WorkDetails = () => {
     setTheProject(title);
   }, [router.isReady, router.query]);
 
-  const work = projects.find((project) => project.title === theProject);
+  const work = projects.find(
+    (project) => project.title.toLowerCase() === theProject.toLowerCase()
+  );
 
   const {
     id,
@@ -61,7 +63,7 @@ const WorkDetails = () => {
       </Head>
       <div className='pt-12 container'>
         <nav className='  flex items-center justify-between text-text-color'>
-          <Link href='/Work'>
+          <Link href='/work'>
             <a
               className='text-xl lg:text-2xl tracking-wider font-extrabold
             underline underline-offset-4'
@@ -178,7 +180,7 @@ const WorkDetails = () => {
 
                 return (
                   <div key={project.id} className='inline-block'>
-                    <Link href={`/Work/${project.title}`}>
+                    <Link href={`/work/${project.title.toLowerCase()}`}>
                       <a className='mb-6 text-text-link uppercase  para project-link'>
                         {project.title}
                       </a>

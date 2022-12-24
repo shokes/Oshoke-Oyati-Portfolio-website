@@ -7,7 +7,7 @@ const SingleWork = function ({ title, desc, mainImage, id }) {
     <section>
       <div className='grid grid-cols-1 lg:flex justify-between items-center mb-14 overflow-hidden'>
         <div>
-          <Link href={`/Work/${title}`}>
+          <Link href={`/work/${title.toLowerCase()}`}>
             <div>
               <Fade triggerOnce duration={2000}>
                 <h2 className='text-5xl title uppercase text-text-link font-semibold cursor-pointer w-[25rem]'>
@@ -28,7 +28,7 @@ const SingleWork = function ({ title, desc, mainImage, id }) {
           </Fade>
         </div>
 
-        <Link href={`Work/${title}`}>
+        <Link href={`work/${title.toLowerCase()}`}>
           <div className='relative cursor-pointer project w-full md:w-[464px]'>
             <Image
               src={mainImage}

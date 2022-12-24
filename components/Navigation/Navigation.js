@@ -27,7 +27,7 @@ const Navigation = function ({ activePage }) {
         <ul className='flex  justify-evenly text-xl list-none'>
           {nav.map((item) => {
             return (
-              <Link href={item.url} key={item.id}>
+              <Link href={item.url.toLowerCase()} key={item.id}>
                 <li
                   className={`hover-underline-animation font-semibold cursor-pointer ${
                     activePage === item.title
