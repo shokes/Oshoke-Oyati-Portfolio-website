@@ -166,7 +166,7 @@ const About = function () {
                 <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
                   2b Creative
                 </div>
-                <span className='text-text-color'>2022-present</span>
+                <span className='text-text-color'>2022-2023</span>
               </div>
 
               <div className='md:w-1/2'>
@@ -178,6 +178,41 @@ const About = function () {
                   Collaborated in the development and maintenance of a range of
                   NextJS websites.
                 </p>
+              </div>
+            </div>
+          </Slide>
+
+          <Slide direction='up' triggerOnce>
+            <div className='grid grid-cols-1 md:flex '>
+              <div className='md:w-1/2'>
+                <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
+                  Arvist
+                </div>
+                <span className='text-text-color'>2023-Present</span>
+              </div>
+
+              <div className='md:w-1/2'>
+                <div className='font-semibold text-xl capitalize  text-text-color md:text-2xl mt-4'>
+                  {' '}
+                  Frontend Developer
+                </div>
+              </div>
+            </div>
+          </Slide>
+          <Slide direction='up' triggerOnce>
+            <div className='grid grid-cols-1 md:flex '>
+              <div className='md:w-1/2'>
+                <div className='font-bold capitalize  text-text-color text-2xl mt-4'>
+                  Easepay
+                </div>
+                <span className='text-text-color'>2023-Present</span>
+              </div>
+
+              <div className='md:w-1/2'>
+                <div className='font-semibold text-xl capitalize  text-text-color md:text-2xl mt-4'>
+                  {' '}
+                  Frontend Developer
+                </div>
               </div>
             </div>
           </Slide>
